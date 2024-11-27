@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Temperature Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="header">
+    <div class="logo">
+      <img src="/pic/SPU.png" height="120%" width="120%">
+    </div>
+    <div class="info">
+      <img src="/pic/2016102611230037Mg000.png">
+    </div>
+    <a href="login.html" class="logout-btn">Logout</a>
+  </div>
+
+  <div class="dashboard-container">
+    <div class="current-temperature">
+      <h2>Temperature</h2>
+      <h1 id="temperature">0 °C</h1> <!-- เริ่มต้นให้เป็นค่า 0 °C หรือข้อความใดๆ ที่เหมาะสม -->
+
+    </div>
+
+    <div class="temperature-chart">
+      <canvas id="tempChart"></canvas>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
